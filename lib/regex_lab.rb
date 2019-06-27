@@ -23,10 +23,9 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  #we want to match mobile numbers (\d = 10), reagrdless of formatting non-digit characters [^/D+]
-  
-  #condition ? if_true : if_false
+  #we want to match mobile numbers (\d = 10)
   number = phone.scan(/\d/)
-    number.length == 10 ? true: false 
+  #condition ? if_true : if_false
+  number.length == 10 ? true: false 
 end
 
