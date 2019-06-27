@@ -25,6 +25,7 @@ end
 def valid_phone_number?(phone)
   #we want to match mobile numbers (\d = 10)
   number = phone.scan(/\d/)
+  
   #condition ? if_true : if_false
   number.length == 10 ? true: false 
 end
